@@ -28,10 +28,11 @@
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
         <%for (i=0;i<menu.length;i++){%>
-        <li>
-          <a href="<%=menu[i].link%>"><%=menu[i].name%></a>
-        </li>
-      <%}%>
+          <li>
+            <a href="<%=menu[i].link%>"><%=menu[i].name%></a>
+          </li>
+        <%}%>
+      
       </ul>
       <ul class="nav navbar-right navbar-nav">
         <li class="dropdown">
@@ -102,16 +103,13 @@
                 <div class="col-xs-9">
                   <h4><span class="label label-primary"><%=data[i].category%></span></h4><h4>
                     <small style="font-family:courier,'new courier';" class="text-muted">Rs. <%=data[i].Price%> </small><br/>
-                    <small style="font-family:courier,'new courier'; font-size:20px" class="text-muted"><%=data[i].Size%> </small> <br/>
+                    <small style="font-family:courier,'new courier'; font-size:20px" class="text-muted"><%=data[i].Brand%> </small> <br/>
                     <small style="font-family:courier,'new courier';" class="text-muted"><%=data[i].Color%> </small>
-                    <br/> 
-                    <a href="details/<%=data[i].id%>" class="label label-success" class="label label-danger">Show details </a></small>
+                    <br/><br/>
+                    <a href="#" class="label label-success">Show more images</a><br/><br/>
+                    <a href="#" class="label label-success">Buy Now</a>
+                    <a href="#" class="label label-primary">Add to Cart</a></small>
                   </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4></span></h4></div>
                 <div class="col-xs-3"></div>
               </div>
               <br><br>

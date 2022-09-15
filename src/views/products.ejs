@@ -95,18 +95,19 @@
           <div class="row">    
             <br>
             <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="<%=data[i].Image%>" style="width:100px;height:100px" class="img-circle"></a>
+              <a class="story-title" href="/products/details/<%=data[i].id%>"><img alt="" src="<%=data[i].Image%>" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
               <h3><%=data[i].product_name%></h3>
               <div class="row">
                 <div class="col-xs-9">
                   <h4><span class="label label-primary"><%=data[i].category%></span></h4><h4>
+                    <small style="font-family:courier,'new courier';" class="text-muted"><%=data[i].Size%> </small><br/>
+                    <small style="font-family:courier,'new courier';" class="text-muted"><%=data[i].Color%> </small><br/>
                     <small style="font-family:courier,'new courier';" class="text-muted">Rs. <%=data[i].Price%> </small><br/>
-                    <small style="font-family:courier,'new courier'; font-size:20px" class="text-muted"><%=data[i].Brand%> </small> <br/>
-                    <small style="font-family:courier,'new courier';" class="text-muted"><%=data[i].Color%> </small>
+                    <small style="font-family:courier,'new courier'; font-size:15px" class="label label-danger"><%=data[i].Brand%> </small>                    
                     <br/><br/>
-                    <small style="font-family:courier,'new courier';" class="label label-success">Read more </small>
+                    <a href="/products/details/<%=data[i].id%>" class="label label-success">Show more Details</a>
                   </h4></div>
                 <div class="col-xs-3"></div>
               </div>
